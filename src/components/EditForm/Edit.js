@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
-import data from "../data";
+// import data from "../data";
 import { useHistory, useParams } from "react-router-dom";
 
 const Edit = () => {
@@ -10,8 +10,8 @@ const Edit = () => {
   const [stock, setstock] = useState("");
 
   let { topicId } = useParams();
-  let history = useHistory();
-  // console.log(topicId);
+  // let history = useHistory();
+  console.log(topicId);
   //   const { id } = this.props.match.params;
 
   //   data.map((item) => {

@@ -10,15 +10,19 @@ const Create = () => {
   const [priceBuy, setpriceBuy] = useState("");
   const [pricePay, setpricePay] = useState("");
   const [stock, setstock] = useState("");
+  const [id, setId] = useState(4);
 
   const pushData = () => {
+    setId(id + 1)
     const data_create = {
+      id: id,
       barang_name: name,
       harga_beli: priceBuy,
       harga_jual: pricePay,
       stok: stock,
     };
     data.push(data_create);
+    console.log(data)
     history.push("/");
   };
   return (

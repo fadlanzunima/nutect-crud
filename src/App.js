@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <Router basename={process.env.PUBLIC_URL}>
-        <Header />
         <div>
+          <Header />
           <Switch>
             <Route exact path="/" component={TableList} />
-            <Route exact path="/create" component={Create} />
-            <Route exact path={"/edit/:id"} component={Edit} />
+            <Route path="/create" component={Create} />
+            <Route path="/edit/:slug" component={Edit} />
           </Switch>
         </div>
       </Router>
